@@ -1,0 +1,67 @@
+header {
+    background: #FAB70D;
+    padding   : 0px 0;
+}
+
+.logo {
+    max-width : 100%;
+    max-height: 100%;
+}
+
+.logo img {
+    width : 250px;
+    height: 250px;
+
+}
+
+nav {
+    position: absolute;
+    top     : 200px;
+    right    : 200px;
+}
+
+nav li {
+    display: inline;
+    margin : 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform : uppercase;
+    color          : #000000;
+    font-weight    : bold;
+    font-size      : 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7c7b79;
+    text-decoration: underline;
+}
+
+.caixa {
+    position: relative;
+    height  : 250px;
+    width   : 100%;
+    margin  : 0 0;
+}
+
+footer {
+    text-align: center;
+    background: #2B2924;
+    padding   : auto;
+}
+footer img{
+    height: 200px;
+    width:  200px;
+}
+
+.copyright {
+    background: #000000;
+    color     : #FFFFFF;
+    font-size : 14px;
+    margin-top: 20px;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+
+}
