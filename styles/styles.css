@@ -9,15 +9,15 @@ header {
 }
 
 .logo img {
-    width : 250px;
-    height: 250px;
+    width : 200px;
+    height: 200px;
 
 }
 
 nav {
     position: absolute;
-    top     : 200px;
-    right    : 200px;
+    bottom  : 20px;
+    right   : 40px;
 }
 
 nav li {
@@ -30,18 +30,17 @@ nav a {
     text-transform : uppercase;
     color          : #000000;
     font-weight    : bold;
-    font-size      : 22px;
+    font-size      : 24px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #7c7b79;
     text-decoration: underline;
 }
 
 .caixa {
     position: relative;
-    height  : 250px;
+    height  : 200px;
     width   : 100%;
     margin  : 0 0;
 }
@@ -51,17 +50,18 @@ footer {
     background: #2B2924;
     padding   : auto;
 }
-footer img{
+
+footer img {
     height: 200px;
-    width:  200px;
+    width : 200px;
 }
 
 .copyright {
-    background: #000000;
-    color     : #FFFFFF;
-    font-size : 14px;
-    margin-top: 20px;
-    padding-top: 10px ;
-    padding-bottom: 10px ;
+    background    : #000000;
+    color         : #FFFFFF;
+    font-size     : 14px;
+    margin-top    : 20px;
+    padding-top   : 10px;
+    padding-bottom: 10px;
 
 }
