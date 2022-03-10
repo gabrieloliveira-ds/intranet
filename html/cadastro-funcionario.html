@@ -6,7 +6,7 @@
     <title>Atenas-Intranet-Cadastro</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/styles-cadastro.css">
+    <link rel="stylesheet" href="../styles/styles-cadastro-funcionario.css">
 </head>
 
 <body>
@@ -27,23 +27,104 @@
         <h1>cadastro > funcionario</h1>
         <br>
         <br>
+        <form>
+            <fieldset>
+                <legend>DADOS PESSOAIS</legend>
+                <label>Nome:
+                    <input class="input-padrao" type="text" id="ip_Nome" required placeholder="Nome">
+                </label>
 
-        <p>nome>text</p><br>
-        <p>sexo> radio </p><br>
-        <p>data de nascimento>data</p><br>
-        <p>CPF</p><br>
-        <p>RG</p><br>
-        <p>OR</p><br>
-        <p>Estado civil</p><br>
-        <p>CEP</p><br>
-        <p>UF</p><br>
-        <p>Cidade</p><br>
-        <p>Bairro</p><br>
-        <p>Logradouro</p><br>
-        <p>Descrição</p><br>
-        <p>E-mail</p><br>
-        <p>Telefone</p><br>
-        <h1>DADOS PROFISSIONAIS</h1>
+                <div>
+                    <legend>Sexo:</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="Sexo" value="v_masculino" id="ip_masculino" checked>M</label>
+
+
+                    <label for="radio-telefone">
+                        <input type="radio" name="Sexo" value="v_feminino" id="ip_feminino">F</label>
+
+                </div>
+
+                <label>Data de Nascimento:
+                    <input class="input-padrao" type="date" id="ip_data-nascimento" required>
+                </label><br>
+
+                <label>RG:
+                    <input class="input-padrao" type="text" id="ip_RG" required placeholder="XXX.XXX.XXX-XX">
+                </label>
+
+                <label>CPF:
+                    <input class="input-padrao" type="text" id="ip_CPF" required placeholder="XXX.XXX.XXX-XX">
+                </label>
+
+                <label>Orgão Emissor:
+                    <select name="ip_Orgão-emissor">
+                        <option value="valor1">Valor 1</option>
+                        <option value="valor2" selected>Valor 2</option>
+                        <option value="valor3">Valor 3</option>
+                    </select>
+                </label>
+
+                <label>Estado civil:
+                    <select name="ip_Estado-civil">
+                        <option value="valor1">Valor 1</option>
+                        <option value="valor2" selected>Valor 2</option>
+                        <option value="valor3">Valor 3</option>
+                    </select>
+                </label><br>
+
+                <label>Email:
+                    <input class="input-padrao" type="email" id="ip_Email" required placeholder="Seuemail@mail.com">
+                </label>
+
+                <label>Telefone:
+                    <input class="input-padrao" type="tel" id="ip_Telefone" required placeholder="(DDD) X XXXX-XXXX">
+                </label><br>
+
+                <label>UF:
+                    <select name="ip_UF">
+                        <option value="valor1">Valor 1</option>
+                        <option value="valor2" selected>Valor 2</option>
+                        <option value="valor3">Valor 3</option>
+                    </select>
+                </label>
+
+                <label>Cidade:
+                    <input class="input-padrao" type="text" id="ip_Cidade" required placeholder="Cidade">
+                </label>
+
+                <label>Bairro:
+                    <input class="input-padrao" type="text" id="ip_Bairro" required placeholder="Bairro">
+                </label>
+
+                <label>Logradouro:
+                    <input class="input-padrao" type="text" id="ip_Logradouro" required placeholder="Logradouro">
+                </label><br>
+
+                <label>Mensagem:<br>
+                    <textarea class="input-padrao" cols="30" rows="10" id="mensagem"></textarea>
+                </label>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>DADOS PROFISSIONAIS</legend>
+                <h1></h1>
+                <p>salário</p>
+                <p>Função> radio</p><br>
+                <p>num (cau/crea</p><br>
+                <p>curso</p><br>
+                <p>universidade</p><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>DADOS PROFISSIONAIS</legend>
+                <p>banco</p><br>
+                <p>num. agencia</p><br>
+                <p>conta corrente</p><br>
+                <p>PIX</p><br>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p class="copyright">&copy; Copyright Atenas Engenharia - 2022 </p>
