@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/styles-cadastro-funcionario.css">
+    <script src='../js/jquery-3.6.0.js'></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
         <br>
         <br>
         <form>
-            <fieldset>
+            <fieldset class="dadospessoais">
                 <legend>DADOS PESSOAIS</legend>
                 <label>Nome:
                     <input class="input-padrao" type="text" id="ip_Nome" required placeholder="Nome">
@@ -110,19 +112,55 @@
             <fieldset>
                 <legend>DADOS PROFISSIONAIS</legend>
                 <h1></h1>
-                <p>salário</p>
-                <p>Função> radio</p><br>
-                <p>num (cau/crea</p><br>
-                <p>curso</p><br>
-                <p>universidade</p><br>
+                <label>Salário:
+                    <input class="input-padrao" type="number" id="ip_salario" required placeholder="">
+                </label>
+                <label> Função:
+                    <select name="ip_func" id="select_func">
+                        <option value="">-Selecionar-</option>
+                        <option value="v_engenheiro">Engenheiro</option>
+                        <option value="v_arquiteto" >Arquiteto</option>
+                        <option value="v_estagiario">Estagiário</option>
+                    </select>
+                </label>
+                    
+                <div id="numfunc">
+
+                    <label class="cau" id="v_arquiteto">cau:
+                        <input class="input-padrao" type="text" id="ip_cau" required placeholder="">
+                    </label>
+                    <label class="crea" id="v_engenheiro">crea:
+                        <input class="input-padrao" type="text" id="ip_crea" required placeholder="">
+                    </label>
+
+                </div>
+                <br>
+                <label>curso:
+                    <input class="input-padrao" type="text" id="ip_curso" required placeholder="">
+                </label>
+
+                <label>universidade:
+                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                </label>
+
+
             </fieldset>
             <br>
             <fieldset>
                 <legend>DADOS PROFISSIONAIS</legend>
-                <p>banco</p><br>
-                <p>num. agencia</p><br>
-                <p>conta corrente</p><br>
-                <p>PIX</p><br>
+                <label>Banco:
+                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                </label>
+                <label>num. agência:
+                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                </label>
+                <br>
+                <label>conta corrente:
+                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                </label>
+                <label>Pix:
+                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                </label>
             </fieldset>
         </form>
     </main>
