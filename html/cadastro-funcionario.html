@@ -27,13 +27,11 @@
     </header>
     <main>
         <h1>cadastro > funcionario</h1>
-        <br>
-        <br>
         <form>
             <fieldset class="dadospessoais">
                 <legend>DADOS PESSOAIS</legend>
                 <label>Nome:
-                    <input class="input-padrao" type="text" id="ip_Nome" required placeholder="Nome">
+                    <input class="input-text1" type="text" id="ip_Nome" required placeholder="Nome">
                 </label>
 
                 <div>
@@ -48,15 +46,15 @@
                 </div>
 
                 <label>Data de Nascimento:
-                    <input class="input-padrao" type="date" id="ip_data-nascimento" required>
-                </label><br>
+                    <input class="input-text1" type="date" id="ip_data-nascimento" required>
+                </label>
 
                 <label>RG:
-                    <input class="input-padrao" type="text" id="ip_RG" required placeholder="XXX.XXX.XXX-XX">
+                    <input class="input-text2" type="text" id="ip_RG" required placeholder="XXX.XXX.XXX-XX">
                 </label>
 
                 <label>CPF:
-                    <input class="input-padrao" type="text" id="ip_CPF" required placeholder="XXX.XXX.XXX-XX">
+                    <input class="input-text2" type="text" id="ip_CPF" required placeholder="XXX.XXX.XXX-XX">
                 </label>
 
                 <label>Orgão Emissor:
@@ -73,15 +71,15 @@
                         <option value="valor2" selected>Valor 2</option>
                         <option value="valor3">Valor 3</option>
                     </select>
-                </label><br>
+                </label>
 
                 <label>Email:
-                    <input class="input-padrao" type="email" id="ip_Email" required placeholder="Seuemail@mail.com">
+                    <input class="input-text1" type="email" id="ip_Email" required placeholder="Seuemail@mail.com">
                 </label>
 
                 <label>Telefone:
-                    <input class="input-padrao" type="tel" id="ip_Telefone" required placeholder="(DDD) X XXXX-XXXX">
-                </label><br>
+                    <input class="input-text2" type="tel" id="ip_Telefone" required placeholder="(DDD) X XXXX-XXXX">
+                </label>
 
                 <label>UF:
                     <select name="ip_UF">
@@ -92,28 +90,28 @@
                 </label>
 
                 <label>Cidade:
-                    <input class="input-padrao" type="text" id="ip_Cidade" required placeholder="Cidade">
+                    <input class="input-text2" type="text" id="ip_Cidade" required placeholder="Cidade">
                 </label>
 
                 <label>Bairro:
-                    <input class="input-padrao" type="text" id="ip_Bairro" required placeholder="Bairro">
+                    <input class="input-text2" type="text" id="ip_Bairro" required placeholder="Bairro">
                 </label>
 
                 <label>Logradouro:
-                    <input class="input-padrao" type="text" id="ip_Logradouro" required placeholder="Logradouro">
-                </label><br>
+                    <input class="input-text1" type="text" id="ip_Logradouro" required placeholder="Logradouro">
+                </label>
 
-                <label>Mensagem:<br>
-                    <textarea class="input-padrao" cols="30" rows="10" id="mensagem"></textarea>
+                <label>Mensagem:
+                    <textarea class="input-text1" cols="30" rows="10" id="mensagem"></textarea>
                 </label>
 
             </fieldset>
-            <br>
+            
             <fieldset>
                 <legend>DADOS PROFISSIONAIS</legend>
                 <h1></h1>
                 <label>Salário:
-                    <input class="input-padrao" type="number" id="ip_salario" required placeholder="">
+                    <input class="input-text2" type="number" id="ip_salario" required placeholder="">
                 </label>
                 <label> Função:
                     <select name="ip_func" id="select_func">
@@ -126,42 +124,43 @@
                     
                 <div id="numfunc">
 
-                    <label class="cau" id="v_arquiteto">cau:
-                        <input class="input-padrao" type="text" id="ip_cau" required placeholder="">
+                    <label class="cau" id="v_arquiteto">CAU:
+                        <input class="input-text1" type="text" id="ip_cau" required placeholder="">
                     </label>
-                    <label class="crea" id="v_engenheiro">crea:
-                        <input class="input-padrao" type="text" id="ip_crea" required placeholder="">
+                    <label class="crea" id="v_engenheiro">CREA:
+                        <input class="input-text1" type="text" id="ip_crea" required placeholder="">
                     </label>
 
                 </div>
-                <br>
+                
                 <label>curso:
-                    <input class="input-padrao" type="text" id="ip_curso" required placeholder="">
+                    <input class="input-text1" type="text" id="ip_curso" required placeholder="">
                 </label>
 
                 <label>universidade:
-                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                    <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
                 </label>
 
 
             </fieldset>
-            <br>
+            
             <fieldset>
                 <legend>DADOS PROFISSIONAIS</legend>
                 <label>Banco:
-                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                    <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
                 </label>
                 <label>num. agência:
-                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                    <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
                 </label>
-                <br>
+               
                 <label>conta corrente:
-                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                    <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
                 </label>
                 <label>Pix:
-                    <input class="input-padrao" type="text" id="ip_universidade" required placeholder="">
+                    <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
                 </label>
             </fieldset>
+            <input type="submit" value="Enviar formulário" class="buttom-submit">
         </form>
     </main>
     <footer>
