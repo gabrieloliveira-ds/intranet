@@ -3,9 +3,9 @@ $(document).ready(function () {
     $('#select_cliente-tipo').on('change', function () {
 
         var selectValor = '#' + $(this).val();
-        $('#numfunc').children('fieldset').hide();
+        $('#formulario').children('div').hide();
 
-        $('#numfunc').children(selectValor).show();
+        $('#formulario').children(selectValor).show();
 
     });
 
