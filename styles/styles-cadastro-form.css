@@ -1,3 +1,20 @@
+.titulo{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+fieldset
+{
+    border:2px solid;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+legend{
+    font-weight: bold;
+}
+
 main {
     width : 940px;
     margin: 0 auto;

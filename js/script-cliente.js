@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    $('#select_func').on('change', function () {
+    $('#select_cliente-tipo').on('change', function () {
 
         var selectValor = '#' + $(this).val();
-        $('#numfunc').children('label').hide();
+        $('#numfunc').children('fieldset').hide();
 
         $('#numfunc').children(selectValor).show();
 

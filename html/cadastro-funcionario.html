@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Atenas-Intranet-Cadastro</title>
+    <title>Atenas Intranet | Cadastro</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/styles-cadastro-funcionario.css">
+    <link rel="stylesheet" href="../styles/styles-cadastro-form.css">
     <script src='../js/jquery-3.6.0.js'></script>
     <script src="../js/script.js"></script>
 </head>
@@ -25,8 +25,9 @@
             </nav>
         </div>
     </header>
+    <h1>cadastro > funcionario</h1>
     <main>
-        <h1>cadastro > funcionario</h1>
+        <h1 class="titulo">Cadastro de Funcionários</h1>
         <form>
             <fieldset class="dadospessoais">
                 <legend>DADOS PESSOAIS</legend>
@@ -46,7 +47,7 @@
                 </div>
 
                 <label>Data de Nascimento:
-                    <input class="input-text1" type="date" id="ip_data-nascimento" required>
+                    <input class="input-text2" type="date" id="ip_data-nascimento" required>
                 </label>
 
                 <label>RG:
@@ -67,9 +68,10 @@
 
                 <label>Estado civil:
                     <select name="ip_Estado-civil">
-                        <option value="valor1">Valor 1</option>
-                        <option value="valor2" selected>Valor 2</option>
-                        <option value="valor3">Valor 3</option>
+                        <option value="">SELECIONAR</option>
+                        <option value="v_Solteiro">Solteiro</option>
+                        <option value="v_Casado">Casado</option>
+                        <option value="v_Viuvo">Viuvo</option>
                     </select>
                 </label>
 
@@ -83,9 +85,31 @@
 
                 <label>UF:
                     <select name="ip_UF">
-                        <option value="valor1">Valor 1</option>
-                        <option value="valor2" selected>Valor 2</option>
-                        <option value="valor3">Valor 3</option>
+                        <option value="v_AC">AC</option>
+                        <option value="v_AL">AL</option>
+                        <option value="v_AM">AM</option>
+                        <option value="v_BA">BA</option>
+                        <option value="v_CE">CE</option>
+                        <option value="v_ES">ES</option>
+                        <option value="v_GO">GO</option>
+                        <option value="v_MA">MA</option>
+                        <option value="v_MT">MA</option>
+                        <option value="v_MS">MS</option>
+                        <option value="v_MG">MG</option>
+                        <option value="v_PA">PA</option>
+                        <option value="v_PB">PB</option>
+                        <option value="v_PR">PR</option>
+                        <option value="v_PE">PE</option>
+                        <option value="v_PI">PI</option>
+                        <option value="v_RJ">RJ</option>
+                        <option value="v_RN">RN</option>
+                        <option value="v_RS">RS</option>
+                        <option value="v_RO">RO</option>
+                        <option value="v_RR">RR</option>
+                        <option value="v_SC">SC</option>
+                        <option value="v_SE">SE</option >
+                        <option value="v_TO">TO</option> 
+                        <option value="v_DF">DF</option> 
                     </select>
                 </label>
 
@@ -160,7 +184,7 @@
                     <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
                 </label>
             </fieldset>
-            <input type="submit" value="Enviar formulário" class="buttom-submit">
+            <input id="bn_submit" type="submit" value="Enviar formulário" class="buttom-submit">
         </form>
     </main>
     <footer>
